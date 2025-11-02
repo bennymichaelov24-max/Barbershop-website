@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Barbershop on 18</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #c8102e, #ffffff, #003366);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #c8102e;
+        }
+
+        .services, .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service-item, .gallery-item {
+            flex: 1 1 200px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+            background: #f9f9f9;
+        }
+
+        .service-item:hover, .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #c8102e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: #ffd700;
+            color: #333;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .services, .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Barbershop on 18</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p style="text-align:center; max-width:700px; margin:auto;">
+            Welcome to <strong>The Barbershop on 18</strong>, your go-to destination in Brooklyn for classic and modern haircuts, grooming, and style. Our skilled barbers are committed to giving you the perfect look in a friendly, professional atmosphere.
+        </p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-item">
+                <h3>Haircut</h3>
+                <p>Classic and modern styles tailored to your look.</p>
+            </div>
+            <div class="service-item">
+                <h3>Beard Trim</h3>
+                <p>Professional shaping and grooming for your beard.</p>
+            </div>
+            <div class="service-item">
+                <h3>Shave</h3>
+                <p>Clean, smooth, and precise traditional shave.</p>
+            </div>
+            <div class="service-item">
+                <h3>Kids Haircuts</h3>
+                <p>Friendly and fun haircuts for your little ones.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="https://via.placeholder.com/200x200?text=Haircut+1" alt="Haircut 1"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/200x200?text=Haircut+2" alt="Haircut 2"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/200x200?text=Beard+Trim" alt="Beard Trim"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/200x200?text=Shave" alt="Shave"></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact & Bookings</h2>
+        <p style="text-align:center; max-width:700px; margin:auto;">
+            Ready for your next haircut or grooming session? Book online now or contact us directly!
+        </p>
+        <div style="text-align:center; margin-top:20px;">
+            <a href="https://booksy.com/en-us/949829_the-barbershop-on-18_barber-shop_29902_brooklyn" target="_blank" class="btn">Book Now</a>
+        </div>
+        <p style="text-align:center; margin-top:15px;">📍 29902 Brooklyn, NY | 📞 (123) 456-7890</p>
+    </section>
+
+    <footer>
+        &copy; 2025 The Barbershop on 18 | Follow us on social media!
+    </footer>
+
+</body>
+</html>
